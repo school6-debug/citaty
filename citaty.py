@@ -86,9 +86,8 @@ class QuoteGeneratorApp:
                 self.update_history_display()
         except FileNotFoundError:
             pass
-            def save_history(self, filename='history.json'):
+    def save_history(self, filename='history.json'):
         with open(filename, 'w') as f:
-
             json.dump(self.history, f)
 
 # Запуск приложения
